@@ -10,6 +10,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Media;
 
 namespace AquaBuddy
 {
@@ -22,6 +23,9 @@ namespace AquaBuddy
 
         string[] fileList;
         List<string> newlist = new List<string>();
+        //AudioService audio = new AudioService();
+        protected MediaPlayer player = new MediaPlayer();
+        
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -72,8 +76,26 @@ namespace AquaBuddy
         {
             var t = newlist[position];
             Toast.MakeText(this, t, ToastLength.Short).Show();
+            //audio.PlayAudioFile("/storage/emulated/0/Music/"+t+".mp3");
+            StartPlayer("/storage/emulated/0/Music/" + t + ".mp3");
         }
 
+        //basic play selected song
+        public void StartPlayer(String filePath)
+        {
+            
+            if (player == null)
+            {
+                player = new MediaPlayer();
+            }
+            else
+            {
+            player.Reset();
+            player.SetDataSource(filePath);
+            player.Prepare();
+            player.Start();
+            } 
 
+        }
     }
 }
