@@ -24,4 +24,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/testMusic" />
+    <Button
+        android:text="@string/testFileList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/testFileList" />
 </LinearLayout>

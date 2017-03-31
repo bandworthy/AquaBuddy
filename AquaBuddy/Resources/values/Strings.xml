@@ -4,5 +4,6 @@
     <string name="ApplicationName">AquaBuddy</string>
     <string name="Text2SpeechTest">Text to Speech Test</string>
     <string name="entertextButton">Enter</string>
-  <string name="testmusic">Test Music</string>
+    <string name="testmusic">Test Music</string>
+    <string name="testFileList">Test File List</string>
 </resources>

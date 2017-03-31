@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Controller\AudioService.cs" />
     <Compile Include="Controller\IAudio.cs" />
+    <Compile Include="FileListActivity.cs" />
     <Compile Include="MusicTestActivity.cs" />
     <Compile Include="TextToSpeechActivity.cs" />
     <Compile Include="MainActivity.cs" />
@@ -69,6 +70,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\MusicTestLO.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\FileListLO.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -90,6 +94,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\jib.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

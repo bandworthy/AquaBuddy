@@ -23,6 +23,7 @@ namespace AquaBuddy
             Button button = FindViewById<Button>(Resource.Id.MyButton);
             Button text2speechbutton = FindViewById<Button>(Resource.Id.Text2SpeechTest);
             Button testmusic = FindViewById<Button>(Resource.Id.testMusic);
+            Button testfile = FindViewById<Button>(Resource.Id.testFileList);
 
             var label = FindViewById<TextView>(Resource.Id.textView1);
 
@@ -44,6 +45,13 @@ namespace AquaBuddy
             testmusic.Click += (sender, e) =>
             {
                 var intent = new Intent(this, typeof(MusicTestActivity));
+                StartActivity(intent);
+            };
+
+            //swtich to filelisttest
+            testfile.Click += (sender, e) =>
+            {
+                var intent = new Intent(this, typeof(fileListActivity));
                 StartActivity(intent);
             };
 
