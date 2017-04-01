@@ -90,10 +90,10 @@ namespace AquaBuddy
             }
             else
             {
-            player.Reset();
-            player.SetDataSource(filePath);
-            player.Prepare();
-            player.Start();
+                player.Reset();
+                player.SetDataSource(filePath);
+                player.Prepare();
+                player.Start();
             } 
 
         }
