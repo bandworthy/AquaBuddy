@@ -2,9 +2,11 @@
 using Android.Widget;
 using Android.OS;
 using Android.Content;
+using AquaBuddy.View;
+using AquaBuddy.Controller;
 //using System;
 
-namespace AquaBuddy
+namespace AquaBuddy.View
 {
     [Activity(Label = "AquaBuddy", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
@@ -24,6 +26,7 @@ namespace AquaBuddy
             Button text2speechbutton = FindViewById<Button>(Resource.Id.Text2SpeechTest);
             Button testmusic = FindViewById<Button>(Resource.Id.testMusic);
             Button testfile = FindViewById<Button>(Resource.Id.testFileList);
+            Button ExerciseText = FindViewById<Button>(Resource.Id.createExercise);
 
             var label = FindViewById<TextView>(Resource.Id.textView1);
 
@@ -52,6 +55,13 @@ namespace AquaBuddy
             testfile.Click += (sender, e) =>
             {
                 var intent = new Intent(this, typeof(fileListActivity));
+                StartActivity(intent);
+            };
+
+            //Exercise add view
+            ExerciseText.Click += (sender, e) =>
+            {
+                var intent = new Intent(this, typeof(exerciseCreate));
                 StartActivity(intent);
             };
 

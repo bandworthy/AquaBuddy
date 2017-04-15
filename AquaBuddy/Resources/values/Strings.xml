@@ -6,4 +6,5 @@
     <string name="entertextButton">Enter</string>
     <string name="testmusic">Test Music</string>
     <string name="testFileList">Test File List</string>
+    <string name="createExercise">Create Exercise</string>
 </resources>
