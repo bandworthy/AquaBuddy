@@ -17,8 +17,8 @@ namespace AquaBuddy.Model
         private String name { get; set; }
         private int duration { get; set; }
 
-        //private enum intensity { get;set;} // need to make it yet
-        //private enum type {get;set;} // need to make it yet
+        private exerciseIntensity intensity { get; }
+        private exerciseType type { get; }
 
             // needs to be limited to 140char 
         private String description { get; set; }
@@ -30,6 +30,24 @@ namespace AquaBuddy.Model
             this.duration = duration;
             this.description = description;
         }
+
+        enum exerciseType
+        {
+            Cardio,
+            Endurance,
+            Resistance,
+            Abdominals,
+            Toning
+        }
+
+        enum exerciseIntensity
+        {
+            Low,
+            Medium,
+            High
+        }
+
+       
 
     }
 }

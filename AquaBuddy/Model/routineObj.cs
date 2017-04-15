@@ -14,5 +14,13 @@ namespace AquaBuddy.Model
 {
     class routineObj
     {
+        private musicObj music { get; set; }
+        private exerciseObj exercises { get; set; }
+
+        public routineObj(musicObj mUsic,exerciseObj eXercise)
+        {
+            this.music = mUsic;
+            this.exercises = eXercise;
+        }
     }
 }

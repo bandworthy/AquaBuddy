@@ -14,6 +14,13 @@ namespace AquaBuddy.Model
 {
     class musicObj
     {
+        private String musicDirectory { get; set; }
+        private String[] musicFileNames { get; set; }
 
+        public musicObj(String musicdirectory,String[] musicfilenames)
+        {
+            this.musicDirectory = musicdirectory;
+            this.musicFileNames = musicfilenames;
+        }
     }
 }
