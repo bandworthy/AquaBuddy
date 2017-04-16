@@ -12,12 +12,12 @@ using Android.Widget;
 
 namespace AquaBuddy.Model
 {
-    class routineObj
+    class RoutineObj
     {
         private musicObj music { get; set; }
         private exerciseObj exercises { get; set; }
 
-        public routineObj(musicObj mUsic,exerciseObj eXercise)
+        public RoutineObj(musicObj mUsic,exerciseObj eXercise)
         {
             this.music = mUsic;
             this.exercises = eXercise;

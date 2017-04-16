@@ -61,7 +61,7 @@
     <Compile Include="FileListActivity.cs" />
     <Compile Include="Model\exerciseObj.cs" />
     <Compile Include="Model\musicObj.cs" />
-    <Compile Include="Model\routineObj.cs" />
+    <Compile Include="Model\RoutineObj.cs" />
     <Compile Include="MusicTestActivity.cs" />
     <Compile Include="TextToSpeechActivity.cs" />
     <Compile Include="MainActivity.cs" />
