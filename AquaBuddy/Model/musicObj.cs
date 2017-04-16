@@ -12,15 +12,15 @@ using Android.Widget;
 
 namespace AquaBuddy.Model
 {
-    class musicObj
+    class MusicObj
     {
-        private String musicDirectory { get; set; }
-        private String[] musicFileNames { get; set; }
+        private String MusicDirectory { get; set; }
+        private String[] MusicFileNames { get; set; }
 
-        public musicObj(String musicdirectory,String[] musicfilenames)
+        public MusicObj(String musicdirectory,String[] musicfilenames)
         {
-            this.musicDirectory = musicdirectory;
-            this.musicFileNames = musicfilenames;
+            this.MusicDirectory = musicdirectory;
+            this.MusicFileNames = musicfilenames;
         }
     }
 }

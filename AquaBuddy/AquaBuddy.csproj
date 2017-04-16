@@ -59,8 +59,8 @@
     <Compile Include="Controller\IAudio.cs" />
     <Compile Include="Controller\playRoutineController.cs" />
     <Compile Include="FileListActivity.cs" />
-    <Compile Include="Model\exerciseObj.cs" />
-    <Compile Include="Model\musicObj.cs" />
+    <Compile Include="Model\ExerciseObj.cs" />
+    <Compile Include="Model\MusicObj.cs" />
     <Compile Include="Model\RoutineObj.cs" />
     <Compile Include="MusicTestActivity.cs" />
     <Compile Include="TextToSpeechActivity.cs" />

@@ -14,13 +14,13 @@ namespace AquaBuddy.Model
 {
     class RoutineObj
     {
-        private musicObj music { get; set; }
-        private exerciseObj exercises { get; set; }
+        private MusicObj Music { get; set; }
+        private ExerciseObj Exercises { get; set; }
 
-        public RoutineObj(musicObj mUsic,exerciseObj eXercise)
+        public RoutineObj(MusicObj mUsic,ExerciseObj eXercise)
         {
-            this.music = mUsic;
-            this.exercises = eXercise;
+            this.Music = mUsic;
+            this.Exercises = eXercise;
         }
     }
 }

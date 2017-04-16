@@ -17,13 +17,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/gridLayout1"
-        android:background="#FF0000">
+        android:background="#4388CC">
         <EditText
             android:text="Exercise Name"
             android:id="@+id/editText1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="60dp"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp" />
     </GridLayout>
@@ -39,24 +39,58 @@
             android:layout_row="0"
             android:layout_column="0"
             android:layout_marginStart="50dp"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="60dp"
             android:textSize="30dp" />
-        <TextView
-            android:text="Cell 0.1"
+        <RadioGroup
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/radioGroupIntensity"
             android:layout_row="0"
             android:layout_column="1"
-            android:layout_margin="10dp" />
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="60dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Low"
+                android:id="@+id/radioButtonLow"
+                android:textSize="15dp" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium"
+                android:id="@+id/radioButtonMedium"
+                android:textSize="15dp" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High"
+                android:id="@+id/radioButtonHigh"
+                android:textSize="15dp" />
+        </RadioGroup>
         <TextView
             android:text="Duration"
             android:layout_row="1"
             android:layout_column="0"
             android:layout_marginStart="50dp"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="60dp"
             android:textSize="30dp" />
+        <NumberPicker
+            android:id="@+id/numberpickerDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="60dp" />
+    <!--
         <TextView
             android:text="Cell 1.1"
             android:layout_row="1"
             android:layout_column="1"
-            android:layout_margin="10dp" />
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="120dp" />
+            -->
     </GridLayout>
 </LinearLayout>
